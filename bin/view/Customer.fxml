@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="745.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+   <children>
+      <Label alignment="CENTER" layoutX="73.0" prefHeight="80.0" prefWidth="600.0" text="Customer" textFill="#961726">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCustId" layoutX="70.0" layoutY="132.0" prefHeight="26.0" prefWidth="162.0" promptText="Cust_Id">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtCustName" layoutX="70.0" layoutY="186.0" prefHeight="26.0" prefWidth="162.0" promptText="CustomerName">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtSalary" layoutX="70.0" layoutY="292.0" prefHeight="26.0" prefWidth="162.0" promptText="Salary">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtAddress" layoutX="70.0" layoutY="240.0" prefHeight="26.0" prefWidth="162.0" promptText="Address">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="157.0" layoutY="347.0" mnemonicParsing="false" onAction="#btnSaveCustomerOnAction" prefHeight="30.0" prefWidth="74.0" style="-fx-background-color: #1abc9c;" text="Save" />
+      <TableView fx:id="tblCustomer" layoutX="274.0" layoutY="111.0" prefHeight="268.0" prefWidth="450.0">
+        <columns>
+          <TableColumn fx:id="colcustomerId" prefWidth="56.0" text="Cust_id" />
+          <TableColumn fx:id="colName" prefWidth="101.5999755859375" text="Name" />
+            <TableColumn fx:id="colAddress" prefWidth="110.4000244140625" text="Address" />
+            <TableColumn fx:id="colSalary" prefWidth="98.4000244140625" text="Salary" />
+            <TableColumn fx:id="colAction" prefWidth="82.39996337890625" text="Action" />
+        </columns>
+      </TableView>
+      <Button layoutX="563.0" layoutY="394.0" mnemonicParsing="false" onAction="#btnReloadOnAction" prefHeight="30.0" prefWidth="102.0" style="-fx-background-color: #34495e;" text="Reload" textFill="#ece4e4" />
+   </children>
+</AnchorPane>
